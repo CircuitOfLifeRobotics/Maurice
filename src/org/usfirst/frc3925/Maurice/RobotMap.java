@@ -26,7 +26,7 @@ public class RobotMap {
     public static SpeedController driveRightBack;
     public static RobotDrive drivedrive;
     public static Relay feederfeederspike;
-    public static SpeedController winchWinchTalon;
+    public static SpeedController winchWinchtalon;
     public static DigitalInput winchwinchswitch;
     public static Relay turtleTailtailspike;
     public static DigitalInput turtleTailtailswitch;
@@ -57,8 +57,8 @@ public class RobotMap {
         feederfeederspike = new Relay(1, 4);
 	LiveWindow.addActuator("Feeder", "feederspike", feederfeederspike);
         
-        winchWinchTalon = new Talon(1, 5);
-	LiveWindow.addActuator("Winch", "WinchTalon", (Talon) winchWinchTalon);
+        winchWinchtalon = new Talon(1, 5);
+	LiveWindow.addActuator("Winch", "WinchTalon", (Talon) winchWinchtalon);
         
         winchwinchswitch = new DigitalInput(1, 2);
 	LiveWindow.addSensor("Winch", "winchswitch", winchwinchswitch);
